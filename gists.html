@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>
+        Gists for Users
+    </title>
+</head>
+
+<body>
+<form id="search-form">
+    <label>How many pages to view?
+        <select name="pages">
+            <option value="1"> 1</option>
+            <option value="2"> 2</option>
+            <option value="3"> 3</option>
+            <option value="4"> 4</option>
+            <option value="5"> 5</option>
+        </select>
+    </label>
+    <br>
+    <fieldset>
+        <legend>
+            What language of gists do you want to see?
+        </legend>
+        <label>
+            <input type="checkbox" name="language" value="Python"> Python
+        </label>
+        <label>
+            <input type="checkbox" name="language" value="JSON"> JSON
+        </label>
+        <label>
+            <input type="checkbox" name="language" value="JavaScript"> JavaScript
+        </label>
+        <label>
+            <input type="checkbox" name="language" value="SQL"> SQL
+        </label>
+    </fieldset>
+    <input type="submit" value="Search">
+
+</form>
+    <h1>Gists</h1>
+    <h2>Favorites:</h2>
+    <ul id="favorite-gists"></ul>
+    <h2>Available:</h2>
+    <ul id="available-gists"></ul>
+    <script src="gists.js"></script>
+</body>
+
+</html>
